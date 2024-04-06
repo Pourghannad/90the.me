@@ -7,7 +7,7 @@
   <title>90the.me</title>
   <style>
     body {
-      background-color: #192023;
+      background-color: #252d45;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -16,26 +16,37 @@
       margin: 0;
     }
 
-    body:before, body:after {
-      content: "";
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      background-color: #fff;
-      border-radius: 100px;
-      box-shadow: 0 0 0 16px #00f;
-      display: none;
-    }
-
-    body:before {
-      transform: translate3d(82px, -24px, 0px);
-    }
-    body:after {
-      transform: translate3d(-80px, -24px, 0px);
-    }
-
     body svg path {
-      fill: #525f92;
+      fill: #545796;
+      stroke: transparent;
+      stroke-width: 0px;
+      animation-name: pathAnimate;
+      animation-duration: 1500ms;
+      animation-iteration-count: 1;
+    }
+
+    @keyframes pathAnimate {
+      0% {
+        stroke: transparent;
+        stroke-width: 0px;
+      }
+      1% {
+        stroke: #2e3753;
+        stroke-width: 190px;
+      }
+      41% {
+        stroke: #2e3753;
+        stroke-width: 190px;
+      }
+      55% {
+        stroke: #2e3753;
+        stroke-width: 190px;
+      }
+
+      100% {
+        stroke: #2e3753;
+        stroke-width: 0px;
+      }
     }
   </style>
 </head>
